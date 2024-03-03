@@ -4,6 +4,7 @@ import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkGfm from "remark-gfm";
 import remarkSlug from "remark-slug";
+import remarkSmartypants from "remark-smartypants";
 import remarkRehype from "remark-rehype";
 import rehypeFigure from "rehype-figure";
 import rehypeDocument from "rehype-document";
@@ -29,6 +30,7 @@ const file = await unified()
   .use(remarkParse)
   .use(remarkGfm)
   .use(remarkSlug)
+  .use(remarkSmartypants)
   .use(remarkRehype)
   .use(rehypeFigure, { className: "rehype-figure" })
   .use(rehypeDocument, documentOptions)

@@ -1,8 +1,17 @@
 a collection of remark tools
 
+## remark-smartypants
+
+SmartyPants can perform the following transformations:
+
+- Straight quotes ( " and ' ) into "curly" `"curly"` quoted HTML entities
+- Apostrophe gets it's `it's` converstion too!
+- converts two `--` dashes into em--dash for you.
+- Three consecutive dots... into an ellipsis entity `...`.
+
 ## Image gallery
 
-Image gallery
+Image gallery via rehype-figure:
 
 ![Engine intake](/static/images/2015-08-15-raspec-impreza-engine-intake.jpg)
 
